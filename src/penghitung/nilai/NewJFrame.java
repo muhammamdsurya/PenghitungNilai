@@ -79,8 +79,6 @@ public class NewJFrame extends javax.swing.JFrame {
         nilai4Txt = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         nilai5Txt = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        nilaiAkhir = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
         simpanBT = new javax.swing.JButton();
@@ -126,10 +124,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Nilai 5 [35%]");
-
-        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Nilai Akhir");
 
         table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -201,10 +195,7 @@ public class NewJFrame extends javax.swing.JFrame {
                                     .addComponent(nilai5Txt, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(hapusBT)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(nilaiAkhir, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addGap(54, 54, 54))
         );
         jPanel1Layout.setVerticalGroup(
@@ -250,8 +241,6 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jLabel9))
                 .addGap(14, 14, 14)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(nilaiAkhir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(simpanBT)
                     .addComponent(hapusBT))
                 .addGap(18, 18, 18)
@@ -289,7 +278,6 @@ public void ClearTextField(){
         nilai3Txt.setText("");
         nilai4Txt.setText("");
         nilai5Txt.setText("");
-        nilaiAkhir.setText("");
 
 
 }
@@ -304,8 +292,6 @@ public void ClearTextField(){
         
         total = (int) ((nilai1*0.10) + (nilai2*0.15) + (nilai3*0.25) + (nilai4*0.15) + (nilai5*0.35)  );
         String konversi = String.valueOf(total);
-        
-        nilaiAkhir.setText(konversi);
         
         datamahasiswa.insertData(
         nimTxt.getText(),
@@ -364,7 +350,6 @@ public void ClearTextField(){
     private javax.swing.JTextField alamatTxt;
     private javax.swing.JButton hapusBT;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -382,7 +367,6 @@ public void ClearTextField(){
     private javax.swing.JTextField nilai3Txt;
     private javax.swing.JTextField nilai4Txt;
     private javax.swing.JTextField nilai5Txt;
-    private javax.swing.JTextField nilaiAkhir;
     private javax.swing.JTextField nimTxt;
     private javax.swing.JButton simpanBT;
     private javax.swing.JTable table;
